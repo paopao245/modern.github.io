@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="color-modes.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+
+    <title>Modern Interior LLC</title>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      
+      .imagen-carrusel {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Otra opción puede ser "contain" */
+      }
+      
+      .imagen-overlay {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .imagen-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Color y transparencia del overlay */
+        z-index: 1;
+      }
+      
+      /* Estilos para el logo */
+.logo {
+  max-height: 40px; /* Altura máxima del logo */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilos para alinear a la izquierda */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+      
+      
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Nav Bar -->
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#143F72;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="modern2.png" alt="Logo" class="logo">
+            Modern Interior LLC
+          </a>
+        </div>
+      </nav>
+    </header>
+    
+
+      <main>
+    <!-- Banner Homepage with Text -->
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="imagen-overlay">
+            <img src="kitchen.jpg" alt="Cocina" class="d-block w-100 h-100 imagen-carrusel">
+            </div>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Modern Interior LLC</h1>
+                <p class="opacity-75">Transformando espacios, elevando su estilo.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+       <!-- 3 Circles with Services -->
+      <div class="container marketing">
+
+
+        <!-- Square pic with Info -->
+        <div class="row featurette">
+            <div class="row align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">Muebles a medida. <span class="text-body-secondary">De calidad.</span></h2>
+              <p class="lead">En Modern Interior, nuestra pasión es diseñar espacios a medida que superen tus expectativas, transformando tus sueños en realidades a través de una gama completa de servicios para tu hogar.</p>
+            </div>
+            
+            <div class="col-md-5 mt-5">
+                <img src="modernlogo.png" alt="Descripción de la imagen" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row">
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="kitchen.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+              </svg>
+              <br><br>
+              <h2 class="fw-normal">Gabinetes de Cocina</h2>
+              <p>Nuestros gabinetes de cocina son diseñados y fabricados a medida para satisfacer tus necesidades específicas. </p> 
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="armario.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+              </svg>
+              <br><br>
+              <h2 class="fw-normal">Armarios en PVC</h2>
+              <p>Los armarios de PVC son una elección inteligente para espacios húmedos, como cocinas y baños, ya que son resistentes a la humedad y fáciles de limpiar. </p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img " width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="casa.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+              </svg>
+              <br><br>
+              <h2 class="fw-normal">Fascias Personalizadas</h2>
+              <p>Nuestras fascias son la solución perfecta para mejorar la estética y el valor de tu hogar. Fabricadas a medida.</p>
+              
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+
+        
+
+        
+
+          <hr class="featurette-divider">
+      </div>
+
+    <!-- Contact Form -->
+      <div class="container mt-5">
+        <h2>¡Contáctanos!</h2>
+        <p>Estamos aquí para ayudarte. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible para discutir tu proyecto y proporcionarte una cotización personalizada<p>
+          
+        <form id="consultaForm">
+            <div class="mb-3">
+                <label for="nombre" class="visually-hidden">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="visually-hidden">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="visually-hidden">Número de Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Número de Teléfono" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="visually-hidden">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="visually-hidden">Motivo de la Consulta</label>
+                <select class="form-select" id="motivo" name="motivo" required>
+                    <option value="" disabled>Seleccione el servicio al que esté interesado...</option>
+                    <option value="gabinetes de cocina">Gabinetes de Cocina</option>
+                    <option value="armarios">Armarios</option>
+                    <option value="fascias a medida">Fascias a Medida</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="visually-hidden">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+            </div>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <hr class="featurette-divider">
+    </div>
+    
+
+
+
+
+      <footer class="container">
+        <p class="float-end hover1"><a href="#"><img src="back-to-top.png" alt="Flecha hacia arriba" style="width: 50px; height: 50px; "></a></p>
+        <p>&copy; 2023 Modern Interior LLC &middot; <a href="tel:+7872386728">+1 (787)-238-6728</a> &middot; Email: <a href="mailto:info@moderninteriorllc.com">info@moderninteriorllc.com</a></p>
+      </footer>
+    </main>
+
+    <style>
+      .hover1:hover {
+        transform: scale(1.5); 
+        opacity: 0.7;
+      }
+    </style>
+  </body>
+
+  </html>
